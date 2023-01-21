@@ -7,21 +7,31 @@ import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.RecyclerView;
 
+<<<<<<< HEAD
 import android.content.Intent;
+=======
+>>>>>>> bc931a3d900fb7c75545756d032c4aa85d014540
 import android.os.Bundle;
 import android.widget.Toast;
 
 import com.mvvm.tvshows.R;
 import com.mvvm.tvshows.adapters.TVShowsAdapter;
 import com.mvvm.tvshows.databinding.ActivityMainBinding;
+<<<<<<< HEAD
 import com.mvvm.tvshows.listeners.TVShowsListener;
+=======
+>>>>>>> bc931a3d900fb7c75545756d032c4aa85d014540
 import com.mvvm.tvshows.models.TVShow;
 import com.mvvm.tvshows.viewmodels.MostPopularTVShowsViewModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
+<<<<<<< HEAD
 public class MainActivity extends AppCompatActivity implements TVShowsListener {
+=======
+public class MainActivity extends AppCompatActivity {
+>>>>>>> bc931a3d900fb7c75545756d032c4aa85d014540
     private MostPopularTVShowsViewModel viewModel;
     private ActivityMainBinding activityMainBinding;
     private List<TVShow> tvShows = new ArrayList<>();
@@ -94,6 +104,7 @@ public class MainActivity extends AppCompatActivity implements TVShowsListener {
         }
     }
 
+<<<<<<< HEAD
     @Override
     public void onTVShowClicked(TVShow tvShow) {
         Intent intent = new Intent(getApplicationContext(), TVShowDetailsActivity.class);
@@ -105,4 +116,6 @@ public class MainActivity extends AppCompatActivity implements TVShowsListener {
         intent.putExtra("status", tvShow.getStatus());
         startActivity(intent);
     }
+=======
+>>>>>>> bc931a3d900fb7c75545756d032c4aa85d014540
 }
